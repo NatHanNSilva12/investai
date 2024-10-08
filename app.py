@@ -7,13 +7,13 @@ app = Flask(__name__)
 
 # Função para pegar dados de ações
 def get_stock_data(symbol):
-    ts = TimeSeries(key='0UOZQM8WH8E74WFU', output_format='pandas')
+    ts = TimeSeries(key='YOUR_API_KEY', output_format='pandas')
     data, _ = ts.get_intraday(symbol=symbol, interval='1min', outputsize='compact')
     return data
 
 # Função para pegar dados de criptomoedas
 def get_crypto_data(symbol):
-    cc = CryptoCurrencies(key='0UOZQM8WH8E74WFU', output_format='pandas')
+    cc = CryptoCurrencies(key='YOUR_API_KEY', output_format='pandas')
     data, _ = cc.get_digital_currency_intraday(symbol=symbol, market='USD')
     return data
 
