@@ -1,6 +1,7 @@
 # Monitoramento de Investimentos: Investai
 
 Este projeto é uma aplicação web desenvolvida com Flask que permite monitorar ações e criptomoedas em tempo real, utilizando a API gratuita da Alpha Vantage. A aplicação exibe os dados de fechamento dos ativos em gráficos interativos utilizando Plotly.
+[imagem-do-projeto](imagem.png)
 
 ## Funcionalidades
 
