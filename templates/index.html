@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investimentos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Monitoramento de Investimentos</h1>
+        <form method="POST" action="/">
+            <div class="form-group">
+                <label for="investment_type">Escolha o tipo de investimento:</label>
+                <select class="form-control" id="investment_type" name="investment_type">
+                    <option value="stock">Ações</option>
+                    <option value="crypto">Criptomoedas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="symbol">Símbolo do ativo (ex: AAPL para Apple, BTC para Bitcoin):</label>
+                <input type="text" class="form-control" id="symbol" name="symbol" placeholder="Exemplo: AAPL">
+            </div>
+            <button type="submit" class="btn btn-primary">Pesquisar</button>
+        </form>
+
+        {% if error %}
+        <div class="alert alert-danger" role="alert">
+            {{ error }}
+        </div>
+        {% endif %}
+
+        <div>
+            {{ graph | safe }}
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Monitoramento de Investimentos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
