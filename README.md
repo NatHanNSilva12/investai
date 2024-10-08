@@ -1,4 +1,4 @@
-# Monitoramento de Investimentos
+# Monitoramento de Investimentos: Investai
 
 Este projeto é uma aplicação web desenvolvida com Flask que permite monitorar ações e criptomoedas em tempo real, utilizando a API gratuita da Alpha Vantage. A aplicação exibe os dados de fechamento dos ativos em gráficos interativos utilizando Plotly.
 
@@ -21,32 +21,38 @@ Este projeto é uma aplicação web desenvolvida com Flask que permite monitorar
 
 ```bash
 git clone https://github.com/NatHanNSilva12/investai-python-invest.git
-cd investai-python-invest 
+cd investai-python-invest
+``` 
 2. Crie um ambiente virtual e ative-o:
-bash
+```bash
 Copiar código
 python -m venv venv
 source venv/bin/activate  # Para Linux/Mac
 venv\Scripts\activate  # Para Windows
+```
 
 3. Instale as dependências:
-bash
+```bash
 Copiar código
 pip install -r requirements.txt
+```
 
 4. Defina sua chave da API Alpha Vantage:
 No arquivo app.py, substitua 'YOUR_API_KEY' pela sua chave de API obtida no site da Alpha Vantage.
 
 5. Rode a aplicação:
-bash
+```bash
 Copiar código
 python app.py
+```
 Acesse a aplicação no navegador pelo endereço http://127.0.0.1:5000.
 
 Paleta de Cores
+```
 Fundo: Cinza claro (#f4f5f7)
 Texto Principal: Cinza escuro (#2c3e50)
 Botão: Azul (#007bff)
+```
 
 #Licença
 Este projeto é distribuído sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
@@ -62,4 +68,4 @@ Copiar código
   
 - **Hospedagem**: Você pode hospedar a aplicação no **Heroku** ou **PythonAnywhere** seguindo as instruções específicas de cada plataforma.
 
-Com esses códigos, você tem uma aplicação completa de monitoramento de investimentos, com gráfi
+Com esses códigos, você tem uma aplicação completa de monitoramento de investimentos, com gráficos e futuramente pretendo adicionar uma IA para monitorar os investimentos e dizer qual é o melhor a ser feito no momento.
